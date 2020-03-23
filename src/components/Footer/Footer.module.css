@@ -6,7 +6,7 @@
 .footer {
   background: #32383e;
   color: #fff;
-  padding: 10px 0;
+  padding: 1rem;
   display: flex;
   justify-content: center;
 }

@@ -7,22 +7,22 @@ const Skills = props => {
       <h2>Skills</h2>
       <div className={styles.content}>
         <p>
-            SMS/Mobile Payment Processing
-            Artificial Intelligence and Machine Learning
-            Language Translation
-            Pathfinding/Mapping Software
+          SMS/Mobile Payment Processing Artificial Intelligence and Machine
+          Learning Language Translation Pathfinding/Mapping Software
         </p>
         <div className={styles.progressLevel}>
           <ul>
             <li>
               <h5>Python</h5>
-              <div>Frameworks and Libraries:</div>
+              <div className={styles.frameworks}>Frameworks and Libraries:</div>
               <div>
-                <p>Django</p>
-                <p>NumPy</p>
-                <p>Pandas</p>
-                <p>Matplotlib</p>
-                <p>Scikit-Learn</p>
+                <ul>
+                  <li>Django</li>
+                  <li>NumPy</li>
+                  <li>Pandas</li>
+                  <li>Matplotlib</li>
+                  <li>Scikit-Learn</li>
+                </ul>
               </div>
               {/* <div className="progress">
                 <div className="determinate" style={{ width: "65%" }}></div>
@@ -30,17 +30,16 @@ const Skills = props => {
             </li>
             <li>
               <h5>Javascript</h5>
-              <div>Frameworks and Libraries:</div>
+              <div className={styles.frameworks}>Frameworks and Libraries:</div>
               <div>
-                <p>React</p>
-                <p>Node</p>
-                <p>Express</p>
-                <p>Passport</p>
-                <p>jQuery</p>
+                <ul>
+                  <li>React</li>
+                  <li>Node</li>
+                  <li>Express</li>
+                  <li>Passport</li>
+                  <li>jQuery</li>
+                </ul>
               </div>
-              {/* <div className="progress">
-                <div className="determinate" style={{ width: "75%" }}></div>
-              </div> */}
             </li>
             <li>
               <h5>HTML, CSS & SaaS</h5>
@@ -51,9 +50,12 @@ const Skills = props => {
             <li>
               <h5>Databases/Tools</h5>
               <div>
-                <p>MongoDB</p>
-                <p>SQL (Postgres, PL/SQL)</p>
-                <p>Agile Development</p>
+                <ul>
+                  <li>SQL (Postgres, PL/SQL)</li>
+                  <li>MongoDB</li>
+                  <li>Agile Development</li>
+                  <li>Tableau</li>
+                </ul>
               </div>
             </li>
           </ul>

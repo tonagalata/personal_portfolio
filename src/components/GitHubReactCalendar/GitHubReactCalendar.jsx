@@ -15,7 +15,7 @@ class GitHubReactCalendar extends React.Component {
     await this.setState({
       events: tonaEnvents
     });
-    await GitHubCalendar("#github-graph", "tonagalata");
+    await GitHubCalendar("#github-graph", "tonagalata", {responsive: true});
   };
 
   render() {
