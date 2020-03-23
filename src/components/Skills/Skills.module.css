@@ -1,0 +1,83 @@
+.innerSection {
+  background: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.innerSection h2 {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #545e69;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.content {
+  font-size: 16px;
+}
+
+.progressLevel li{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.progressLevel li h5{
+  flex-grow: 1;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #778492;
+}
+
+.progressLevel span {
+  color: #727272;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Lato", arial, sans-serif;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* .progressLevel span i{
+  font-size: 20px;
+  color: #fff;
+  background-color: rgb(150, 150, 150);
+  border-radius: 100%;
+  cursor: pointer;
+} */
+
+/* .tooltip1{
+  background-color: #000 !important;
+  color: #fff !important;
+  position: absolute !important;
+  border: 1px solid #000 !important;
+  border-radius: 5px;
+  padding: 1rem;
+  word-wrap: normal;
+  max-width: 15rem;
+  max-height: 5rem;
+  text-align: center;
+  z-index: 100;
+  top: 36rem;
+  right: 8rem;
+  font-size: smaller;
+  display: none;
+}
+
+.smallTooltipDiv {
+  background-color: #000 !important;
+  position: absolute !important;
+  border-top: 1px solid #000 !important;
+  border-right: 1px solid #000 !important;
+  top: 37.77rem;
+  right: 7.64rem;
+  height: 10px;
+  width: 10px;
+  transform: rotate(45deg);
+  display: none;
+} */

@@ -1,0 +1,22 @@
+.copyright svg {
+  height: 1rem;
+  color: #fb866a;
+}
+
+.footer {
+  background: #32383e;
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  width: 100% !important;
+  margin: 0 auto !important;
+  max-width: 1360px !important;
+  display: flex;
+  justify-content: center;
+}

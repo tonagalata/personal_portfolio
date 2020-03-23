@@ -1,0 +1,37 @@
+.contentSBS {
+  display: flex;
+  margin: 1rem;
+  padding: 1rem;
+  align-items: flex-start;
+}
+
+.contentSBS img {
+  max-height: 7rem;
+  margin-top: 2rem;
+}
+
+.contentSBSDesc {
+  margin-left: 1rem;
+  font-size: smaller;
+}
+
+.contentSBSDesc h3 {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #778492;
+  margin-bottom: 0;
+}
+
+.contentSBSDesc .contentDesc {
+  margin-top: 0;
+  font-size: 14px;
+  text-decoration: underline;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #778492;
+}
+
+.projectBtn svg {
+  height: 1rem;
+}

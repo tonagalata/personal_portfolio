@@ -1,0 +1,76 @@
+.innerSection {
+  background: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.innerSection h2 {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #545e69;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.content {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.contentTitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #778492;
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+
+.contentDesc {
+  text-align: center;
+  color: #778492;
+  margin-top: 0px;
+}
+
+.contentTitle:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.content img {
+  max-height: 30rem;
+  max-width: 100%;
+}
+
+.projectBtn {
+  display: flex;
+  margin: 0 auto;
+  min-width: 25%;
+  max-height: 4rem;
+  font-size: calc(10px + 1vmin);
+  /* font-size: 1rem; */
+  justify-content: center;
+  align-items: center;
+}
+
+.projectBtn i {
+  font-size: 1.85rem;
+}
+
+.GitHubFeed {
+  margin-top: 2rem;
+  min-height: 30rem;
+}
+
+.GitHubFeed > div {
+  min-height: 500px !important;
+}

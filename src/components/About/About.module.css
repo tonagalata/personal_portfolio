@@ -1,0 +1,22 @@
+.innerSection {
+  background: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.innerSection h2 {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #545e69;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.content {
+  font-size: 16px;
+}
