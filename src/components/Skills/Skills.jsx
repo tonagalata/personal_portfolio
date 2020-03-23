@@ -15,30 +15,45 @@ const Skills = props => {
         <div className={styles.progressLevel}>
           <ul>
             <li>
-              <h5>Python & Django</h5>
-              <span className={styles.tooltip2}>
-              Intermediate
-              </span>
-              <div className="progress">
-                <div className="determinate" style={{ width: "65%" }}></div>
+              <h5>Python</h5>
+              <div>Frameworks and Libraries:</div>
+              <div>
+                <p>Django</p>
+                <p>NumPy</p>
+                <p>Pandas</p>
+                <p>Matplotlib</p>
+                <p>Scikit-Learn</p>
               </div>
+              {/* <div className="progress">
+                <div className="determinate" style={{ width: "65%" }}></div>
+              </div> */}
             </li>
             <li>
-              <h5>Javascript & jQuery</h5>
-              <span>
-              Intermediate
-              </span>
-              <div className="progress">
-                <div className="determinate" style={{ width: "75%" }}></div>
+              <h5>Javascript</h5>
+              <div>Frameworks and Libraries:</div>
+              <div>
+                <p>React</p>
+                <p>Node</p>
+                <p>Express</p>
+                <p>Passport</p>
+                <p>jQuery</p>
               </div>
+              {/* <div className="progress">
+                <div className="determinate" style={{ width: "75%" }}></div>
+              </div> */}
             </li>
             <li>
               <h5>HTML, CSS & SaaS</h5>
-              <span>
-              Intermediate
-              </span>
-              <div className="progress">
+              {/* <div className="progress">
                 <div className="determinate" style={{ width: "80%" }}></div>
+              </div> */}
+            </li>
+            <li>
+              <h5>Databases/Tools</h5>
+              <div>
+                <p>MongoDB</p>
+                <p>SQL (Postgres, PL/SQL)</p>
+                <p>Agile Development</p>
               </div>
             </li>
           </ul>
