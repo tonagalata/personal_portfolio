@@ -1,6 +1,6 @@
 import React from "react";
 import GitHubCalendar from "github-calendar";
-import GitHubFeed from 'react-github-activity'
+// import GitHubFeed from 'react-github-activity'
 import styles from "./GitHubReactCalendar.module.css";
 
 class GitHubReactCalendar extends React.Component {
@@ -28,14 +28,14 @@ class GitHubReactCalendar extends React.Component {
               <div id="github-graph" className="github-graph">
               </div>
               <div className={styles.GitHubFeed}>
-              <GitHubFeed
+              {/* <GitHubFeed
                 className={styles.feed}
                 fullName="Galata Tona" 
                 userName="tonagalata" 
                 avatarUrl='https://avatars0.githubusercontent.com/u/28738877?v=4' 
                 profileUrl="https://www.github.com/tonagalata" 
                 events={this.state.events} 
-              />
+              /> */}
               </div>
             </div>
           </section>
