@@ -76,3 +76,8 @@
   min-height: 500px !important;
   min-width: 100% !important;
 }
+
+.GitHubFeed > div > .github-header-outer, .GitHubFeed > div > .github-header {
+  background: linear-gradient(to bottom,#000 0,#000 100%)
+}
+/* background: linear-gradient(to bottom,#fff 0,#f4f4f4 100%) !important; */
