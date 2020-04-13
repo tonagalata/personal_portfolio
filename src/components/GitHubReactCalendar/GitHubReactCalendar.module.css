@@ -8,9 +8,7 @@
   color: #fafafa;
 }
 
-.bgChange .GitHubFeed > div, .bgChange .GitHubFeed > a {
-  min-height: 500px !important;
-  min-width: 100% !important;
+.bgChange .GitHubFeed div, .bgChange .GitHubFeed a {
   color: #fafafa !important;
 }
 
@@ -98,11 +96,11 @@
   max-width: 100vw !important;
 }
 
-.GitHubFeed > div {
+.GitHubFeed> div {
   min-height: 500px !important;
   min-width: 100% !important;
 }
 
-.GitHubFeed > div > .github-header-outer {
+.GitHubFeed div > div.github-header-outer {
   background: linear-gradient(rgb(255, 255, 255) 0px, rgb(244, 244, 244) 100%);
 }

@@ -17,7 +17,7 @@ const Header = (props) => {
           <h1>Galata Tona</h1>
           <h2>Software Engineer</h2>
           <h3>Washington DC Metro</h3>
-          <ul className={styles.listInline}>
+          <ul className={props.bgColor ? styles.bgColorSVG : styles.listInline}>
             <li className={styles.listItem}>
               <a href="https://twitter.com/galata_tona" target="_blank" rel="noopener noreferrer">
                 <Twitter />
