@@ -15,6 +15,8 @@ class GitHubReactCalendar extends React.Component {
     await this.setState({
       events: tonaEnvents
     });
+    const cal = await fetch('https://cors-anywhere.herokuapp.com/https://github.com/users/tonagalata/contributions').then(res => console.log(res))
+    console.log(cal)
     await GitHubCalendar("#github-graph", "tonagalata", {responsive: true});
   };
 
