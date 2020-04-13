@@ -26,7 +26,7 @@ class LatestProject extends React.Component {
   render() {
     return (
       <>
-        <div className={styles.innerSection}>
+        <div className={this.props.bgColor ? styles.bgChange : styles.innerSection}>
           <h2>Latest Projects</h2>
           <div className={styles.content}>
             <h3 className={styles.contentTitle}>{this.state.repo.name}</h3>
@@ -50,7 +50,7 @@ class LatestProject extends React.Component {
             </a>
           </div>
           <hr />
-          <PastProjects />
+          <PastProjects bgColor={this.props.bgColor}/>
         </div>
       </>
     );

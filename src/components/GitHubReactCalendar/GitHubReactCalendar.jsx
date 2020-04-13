@@ -23,7 +23,7 @@ class GitHubReactCalendar extends React.Component {
   render() {
     return (
       <>
-        <div className={styles.innerSection}>
+        <div className={this.props.bgColor ? styles.bgChange : styles.innerSection}>
           <h2>GitHub</h2>
           <section className="github section">
             <div className="section-inner">

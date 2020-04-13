@@ -12,21 +12,14 @@ class About extends React.Component {
   handleClick = (e) => {
     e.preventDefault()
     this.setState({
-      seeMore: true
-    })
-  }
-
-  handleToggle = (e) => {
-    e.preventDefault()
-    this.setState({
-      seeMore: false
+      seeMore: this.state.seeMore ? false : true
     })
   }
   
   
   render(){
   return (
-    <div className={styles.innerSection}>
+    <div className={this.props.bgColor ? styles.bgChange : styles.innerSection}>
       <h2>About Me</h2>
       <div className={styles.content}>
         <p>
@@ -62,7 +55,7 @@ class About extends React.Component {
             Languages and Frameworks: Javascript, SQL, Python, Ruby, Mongoose,
             Electron, and MERN Stack (MongoDB, Express, React, Node.js)
           </p>
-          <span className='btn' onClick={this.handleToggle}>close</span>
+          <span className='btn' onClick={this.handleClick}>close</span>
         </div>
              : <span className='btn' onClick={this.handleClick}>read more</span> }
       </div>

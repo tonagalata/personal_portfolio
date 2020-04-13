@@ -4,7 +4,7 @@ import styles from "./Education.module.css";
 
 const Education = props => {
   return (
-    <div className={styles.innerSection}>
+    <div className={props.bgColor ? styles.bgChange : styles.innerSection}>
       <h2>Education</h2>
       <div className={styles.eduSection}>
         <span>

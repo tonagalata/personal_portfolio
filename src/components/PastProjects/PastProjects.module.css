@@ -1,3 +1,20 @@
+.bgChange {
+  display: flex;
+  margin: 1rem;
+  padding: 1rem;
+  align-items: flex-start;
+}
+
+.bgChange img {
+  max-height: 7rem;
+  margin-top: 2rem;
+}
+
+.bgChange .contentSBSDesc .contentDesc, .bgChange .contentSBSDesc .contentTitle  {
+  color: #fafafa;
+  font-size: min(1rem);
+}
+
 .contentSBS {
   display: flex;
   margin: 1rem;
@@ -38,6 +55,9 @@
 
 @media only screen and (max-width: 767px) {
   .contentSBS{
+    flex-direction: column;
+  }
+  .bgChange {
     flex-direction: column;
   }
 }

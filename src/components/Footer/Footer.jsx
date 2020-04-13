@@ -4,7 +4,7 @@ import styles from "./Footer.module.css";
 
 const Footer = props => {
   return (
-    <footer className={styles.footer}>
+    <footer className={props.bgColor ? styles.bgChange : styles.footer}>
       <div className={styles.container}>
         <div>
           Galata Tona &copy; inspired by: the static site {" "}

@@ -2,10 +2,10 @@ import React from "react";
 import { ReactComponent as FindOutMore }from "../../images/findout.svg";
 import styles from "./PastProjects.module.css";
 
-const PastProjects = () => {
+const PastProjects = (props) => {
   return (
     <>
-      <div className={styles.contentSBS}>
+      <div className={props.bgColor ? styles.bgChange : styles.contentSBS}>
         <img src='https://github.com/tonagalata/coingo.app/blob/development/public/images/screenshots/Screen%20Shot1.png?raw=true' alt="project" />
         <div className={styles.contentSBSDesc}>
           <h3 className={styles.contentTitle}>CoinGo</h3>
@@ -22,15 +22,14 @@ const PastProjects = () => {
             className={styles.projectBtn}
           >
             <FindOutMore/> Launch Project
-            {/* <i className="material-icons left">cloud</i>Go To Project */}
           </a>
         </div>
       </div>
       <hr/>
-      <div className={styles.contentSBS}>
+      <div className={props.bgColor ? styles.bgChange : styles.contentSBS}>
         <img src='https://github.com/tonagalata/tonagalata.github.io/blob/master/assets/screenshot1.png?raw=true'alt="project" />
         <div className={styles.contentSBSDesc}>
-          <h3 className={styles.contentTitle}>CoinGo</h3>
+          <h3 className={styles.contentTitle}>Dayli Hlth</h3>
           <p className={styles.contentDesc}>
           Keep track of your daily health goals. Manage Your Health. Manage Your Life. 
           </p>
@@ -44,7 +43,6 @@ const PastProjects = () => {
             className={styles.projectBtn}
           >
             <FindOutMore/> Launch Project
-            {/* <i className="material-icons left">cloud</i>Go To Project */}
           </a>
         </div>
       </div>

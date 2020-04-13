@@ -10,28 +10,37 @@ import WorkExperience from "../../components/WorkExperience/WorkExperience";
 import Footer from "../../components/Footer/Footer";
 
 class App extends Component {
-  state = {};
+  state = {
+    darkBG: false
+  }
+
+  handleColorChange = (e) => {
+    e.preventDefault()
+    this.setState({
+      darkBG: this.state.darkBG ? false : true
+    })
+  }
 
   render() {
     return (
-      <div className="App-container">
+      <div className={this.state.darkBG ? `bg-container-color` : `App-container`}>
         <div className="App-outer-container">
-          <Header />
+          <Header handleColorChange={this.handleColorChange} bgColor={this.state.darkBG}/>
           <div className="App-inner-container container">
             <div className="main-container">
-              <About />
-              <LatestProject/>
-              <WorkExperience/>
+              <About handleColorChange={this.handleColorChange} bgColor={this.state.darkBG}/>
+              <LatestProject handleColorChange={this.handleColorChange} bgColor={this.state.darkBG}/>
+              <WorkExperience handleColorChange={this.handleColorChange} bgColor={this.state.darkBG}/>
               <div className="github-section">
-              <GitHubReactCalendar />
+              <GitHubReactCalendar handleColorChange={this.handleColorChange} bgColor={this.state.darkBG}/>
               </div>
             </div>
             <div className="side-container">
-              <Skills />
-              <Education />
+              <Skills handleColorChange={this.handleColorChange} bgColor={this.state.darkBG} />
+              <Education handleColorChange={this.handleColorChange} bgColor={this.state.darkBG} />
             </div>
           </div>
-          <Footer/>
+          <Footer handleColorChange={this.handleColorChange} bgColor={this.state.darkBG}/>
         </div>
       </div>
     );

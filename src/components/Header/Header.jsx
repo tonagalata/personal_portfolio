@@ -7,9 +7,10 @@ import { ReactComponent as Linkedin } from "../../images/socail/linkedin.svg";
 import { ReactComponent as Stackoverflow } from "../../images/socail/stackoverflow.svg";
 import { ReactComponent as PaperPlane } from "../../images/socail/paper-plane.svg";
 
-const Header = props => {
-  return (
-    <div className={styles.header}>
+const Header = (props) => {
+
+    return ( 
+    <div className={props.bgColor ? styles.bgChange : styles.header}>
       <div className={styles.container}>
         <img className={styles.avatar} src={avatar} alt="avatar" />
         <div className={styles.profileContent}>
@@ -39,17 +40,26 @@ const Header = props => {
             </li>
           </ul>
         </div>
-        <a
-          style={{ display: "flex", alignItems: "center", height: '3rem', fontWeight: 800 }}
-          className="contact btn"
-          href="mailto:tonagalata@gmail.com"
-        >
-          <PaperPlane style={{ height: 20, marginRight: '.5rem' }} />
-          Contact me
-        </a>
+        <div className={styles.switchContainer}>
+          <a
+            style={{ display: "flex", alignItems: "center", height: '3rem', fontWeight: 800 }}
+            className="contact btn"
+            href="mailto:tonagalata@gmail.com"
+            >
+            <PaperPlane style={{ height: 20, marginRight: '.5rem' }} />
+            Contact me
+          </a>
+          <div className="switch">
+                <button 
+                className={props.bgColor ? `btn grey lighten-5 black-text` : `btn black`} 
+                onClick={props.handleColorChange}>
+                  {props.bgColor ? `Light Mode` : `Dark Mode`}
+                  </button>
+          </div>
+        </div>
       </div>
     </div>
-  );
-};
-
+     );
+  }
+ 
 export default Header;

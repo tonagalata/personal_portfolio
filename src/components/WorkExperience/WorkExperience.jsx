@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./WorkExperience.module.css";
 
-const WorkExperience = () => {
+const WorkExperience = (props) => {
   return (
     <>
-      <div className={styles.innerSection}>
+      <div className={props.bgColor ? styles.bgChange : styles.innerSection}>
         <h2>Work Experience</h2>
         <div className={styles.content}>
           <div className={styles.conentExp}>
