@@ -22,12 +22,23 @@ class About extends React.Component {
     <div className={this.props.bgColor ? styles.bgChange : styles.innerSection}>
       <h2>About Me</h2>
       <div className={styles.content}>
+        {
+          !this.state.seeMore ?
+        
         <p>
           My experiences as an immigrant from Ethiopia have shaped my ideals as
           a developer. My passion for building tools that not only influence the
           tech industry but also developing countries, leads me to seek
-          opportunities at companies whose mission is user empowerment
-        </p>
+          opportunities at companies whose mission is user empowerment...
+        </p> : 
+        <p>
+        My experiences as an immigrant from Ethiopia have shaped my ideals as
+        a developer. My passion for building tools that not only influence the
+        tech industry but also developing countries, leads me to seek
+        opportunities at companies whose mission is user empowerment
+      </p> 
+
+        }
         {
           this.state.seeMore ?
         <div>
@@ -56,7 +67,9 @@ class About extends React.Component {
           </p>
           <span className='btn' onClick={this.handleClick}>close</span>
         </div>
-             : <span className='btn' onClick={this.handleClick}>read more</span> }
+             : <>
+               <span className='btn' onClick={this.handleClick}>read more</span>
+               </>}
       </div>
     </div>
   );

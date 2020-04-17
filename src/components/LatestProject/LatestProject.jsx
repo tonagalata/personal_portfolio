@@ -33,12 +33,7 @@ class LatestProject extends React.Component {
             <p className={styles.contentDesc}>{this.state.repo.description}</p>
             <img src='https://github.com/tonagalata/trimer/blob/master/src/Images/screenshots/screenshot0.png?raw=true' alt="project" style={{}}/>
             <p>
-              Looking for a Barbershop, Salon or Spa is difficult, even more
-              trying to get the stylist's availability for the day or even the
-              week is difficult. That is where Trimer comes in to save the day.
-              With Trimer you can browser through our partnering business to
-              check their location, see review from actual customers and even
-              schedule an appointment from a specific stylist.
+            With Trimer you can browse through our partnering businesses to find their location, see reviews from actual customers and even schedule an appointment from a specific stylist.
             </p>
             <a
               href="https://trimer-app.herokuapp.com/"

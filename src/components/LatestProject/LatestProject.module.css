@@ -27,6 +27,22 @@
   margin-left: 1rem;
 }
 
+.bgChange .contentTitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #fafafa;
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+
+.bgChange .contentDesc {
+  text-align: center;
+  color: #fafafa;
+  margin-top: 0px;
+}
+
 .innerSection h2 {
   text-transform: uppercase;
   margin-top: 0;

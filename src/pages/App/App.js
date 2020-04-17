@@ -6,7 +6,7 @@ import Education from "../../components/Education/Education";
 import LatestProject from "../../components/LatestProject/LatestProject";
 import GitHubReactCalendar from '../../components/GitHubReactCalendar/GitHubReactCalendar'
 import "./App.css";
-import WorkExperience from "../../components/WorkExperience/WorkExperience";
+// import WorkExperience from "../../components/WorkExperience/WorkExperience";
 import Footer from "../../components/Footer/Footer";
 
 class App extends Component {
@@ -30,7 +30,7 @@ class App extends Component {
             <div className="main-container">
               <About handleColorChange={this.handleColorChange} bgColor={this.state.darkBG}/>
               <LatestProject handleColorChange={this.handleColorChange} bgColor={this.state.darkBG}/>
-              <WorkExperience handleColorChange={this.handleColorChange} bgColor={this.state.darkBG}/>
+              {/* <WorkExperience handleColorChange={this.handleColorChange} bgColor={this.state.darkBG}/> */}
               <div className="github-section">
               <GitHubReactCalendar handleColorChange={this.handleColorChange} bgColor={this.state.darkBG}/>
               </div>
