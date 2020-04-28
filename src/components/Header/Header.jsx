@@ -1,6 +1,7 @@
 import React from "react";
 import avatar from "../../images/avatar2.png";
 import styles from "./Header.module.css";
+import { ReactComponent as FindOutMore }from "../../images/findout.svg";
 import { ReactComponent as Twitter } from "../../images/socail/twitter2.svg";
 import { ReactComponent as Github } from "../../images/socail/github.svg";
 import { ReactComponent as Linkedin } from "../../images/socail/linkedin.svg";
@@ -47,7 +48,7 @@ const Header = (props) => {
             href="mailto:tonagalata@gmail.com"
             >
             <PaperPlane style={{ height: 20, marginRight: '.5rem' }} />
-            Contact me
+            Contact
           </a>
           <div className="switch">
                 <button 
@@ -55,6 +56,13 @@ const Header = (props) => {
                 onClick={props.handleColorChange}>
                   {props.bgColor ? `Light Mode` : `Dark Mode`}
                   </button>
+
+          </div>
+          <div className={styles.lastButton}>
+          <a href="/GalataTonaResume.pdf" download>
+            <button className={props.bgColor ? `btn blue white-text` : `btn white black-text`}
+            >Resume<FindOutMore className={styles.FindOutMore} /></button>
+            </a>
           </div>
         </div>
       </div>
