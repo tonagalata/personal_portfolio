@@ -59,7 +59,7 @@ const Header = (props) => {
 
           </div>
           <div className={styles.lastButton}>
-          <a href="/GalataTonaResume.pdf" download>
+          <a href="/Galata Tona Resume_.pdf" download>
             <button className={props.bgColor ? `btn blue white-text` : `btn white black-text`}
             >Resume<FindOutMore className={styles.FindOutMore} /></button>
             </a>
