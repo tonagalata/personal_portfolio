@@ -26,7 +26,7 @@ class About extends React.Component {
           !this.state.seeMore ?
         
         <p>
-          my experiences as an immigrant from Ethiopia have shaped my ideals as
+          My experiences as an immigrant from Ethiopia have shaped my ideals as
           a developer. My passion for building tools that not only influence the
           tech industry but also developing countries, leads me to seek
           opportunities at companies whose mission is user empowerment...
