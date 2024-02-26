@@ -8,10 +8,12 @@ import GitHubReactCalendar from '../../components/GitHubReactCalendar/GitHubReac
 import "./App.css";
 // import WorkExperience from "../../components/WorkExperience/WorkExperience";
 import Footer from "../../components/Footer/Footer";
+import Maintenance from "../../components/Maintenance/Maintenance";
 
 class App extends Component {
   state = {
-    darkBG: false
+    darkBG: false,
+    maintenance: true
   }
 
   handleColorChange = (e) => {
@@ -23,6 +25,9 @@ class App extends Component {
 
   render() {
     return (
+      this.state.maintenance ?
+      <Maintenance />
+      :
       <div className={this.state.darkBG ? `bg-container-color` : `App-container`}>
         <div className="App-outer-container">
           <Header handleColorChange={this.handleColorChange} bgColor={this.state.darkBG}/>
